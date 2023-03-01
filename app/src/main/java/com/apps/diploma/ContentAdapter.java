@@ -1,6 +1,5 @@
-package com.msbteapp.msbtewallah;
+package com.apps.diploma;
 
-import static android.content.Context.DOWNLOAD_SERVICE;
 import static android.os.Environment.DIRECTORY_DOWNLOADS;
 
 import android.app.DownloadManager;
@@ -76,6 +75,7 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ViewHold
         holder.btnDownlaod.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(context, "Downloading Started...", Toast.LENGTH_SHORT).show();
                 if (model.getD_link().isEmpty() || model.getD_link().equals("null")){
                     downloadFile(holder.btnDownlaod.getContext(),model.getTitle(),".pdf",DIRECTORY_DOWNLOADS,model.getLink());
                 }else{

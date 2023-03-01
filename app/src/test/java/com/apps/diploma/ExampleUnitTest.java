@@ -1,4 +1,4 @@
-package com.msbteapp.msbtewallah;
+package com.apps.diploma;
 
 import org.junit.Test;
 

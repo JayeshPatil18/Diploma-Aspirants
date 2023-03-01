@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.msbteapp.msbtewallah">
+    package="com.apps.diploma">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -13,22 +13,22 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MsbteWallah"
+        android:theme="@style/Theme.DiplomaAspirants"
         tools:targetApi="31"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".PdfView"
+            android:name="com.apps.diploma.PdfView"
             android:exported="false"
-            android:parentActivityName=".Content"/>
+            android:parentActivityName="com.apps.diploma.Content"/>
         <activity
-            android:name=".Content"
+            android:name="com.apps.diploma.Content"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName="com.apps.diploma.MainActivity"/>
         <activity
-            android:name=".MainActivity"
+            android:name="com.apps.diploma.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.MsbteWallah.NoActionBar">
+            android:theme="@style/Theme.DiplomaAspirants.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,9 +36,6 @@
             </intent-filter>
         </activity>
 
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="@string/appAdId"/>
     </application>
 
 </manifest>

@@ -1,16 +1,13 @@
-package com.msbteapp.msbtewallah.ui.slideshow;
+package com.apps.diploma.ui.slideshow;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
-import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -20,11 +17,10 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.msbteapp.msbtewallah.ContentAdapter;
-import com.msbteapp.msbtewallah.Item;
-import com.msbteapp.msbtewallah.PostsAdapter;
-import com.msbteapp.msbtewallah.R;
-import com.msbteapp.msbtewallah.databinding.FragmentSlideshowBinding;
+import com.apps.diploma.Item;
+import com.apps.diploma.PostsAdapter;
+import com.apps.diploma.R;
+import com.apps.diploma.databinding.FragmentSlideshowBinding;
 
 import java.util.ArrayList;
 
